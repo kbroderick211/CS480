@@ -1,0 +1,40 @@
+Exam1A
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Exam 1 part 1</title>
+    
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <style>
+          div {
+                height: 250px;
+                width: 100px;
+                border-style: dashed;
+                border-color: magenta;
+                border-width: 5px;
+                border-radius: 25px;
+
+            }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+				var divWidth = $("div").width();
+                    $("div").hover(function(){
+                        $(this).css({border: '5px dashed green'}).animate({
+                        width: '400px'},{
+                        duration: 5000
+
+    });
+  });
+			});
+    </script>
+    
+</head>
+<body>
+
+    <div class="div"></div>
+    
+</body>
+</html>
